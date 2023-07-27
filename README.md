@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # read-together-UI
 Este é o repositório destinado à UI do Read Together, que passará a usar React.js.
 

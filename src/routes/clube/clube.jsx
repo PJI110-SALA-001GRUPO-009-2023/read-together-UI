@@ -12,11 +12,11 @@ function Clube({ data }) {
                         <Panel data={data} />
                     </div>
                     <div className="col row justify-content-evenly h-50">
-                        <section class="col-lg-4 d-flex flex-column">
-                            <a href="<%- clubeData.idClube -%>/reuniao/1" class="d-inline rounded mb-2 btn btn-lilas btn-secondary">
+                        <section className="col-lg-4 d-flex flex-column">
+                            <a href="<%- clubeData.idClube -%>/reuniao/1" className="d-inline rounded mb-2 btn btn-lilas btn-secondary">
                                 Participar da Reunião
                             </a>
-                            <button class="line rounded mb-2 btn btn-lilas btn-secondary" type="button" data-bs-toggle="modal"
+                            <button className="line rounded mb-2 btn btn-lilas btn-secondary" type="button" data-bs-toggle="modal"
                                 data-bs-target="#membrosModal">
                                 Membros
                             </button>

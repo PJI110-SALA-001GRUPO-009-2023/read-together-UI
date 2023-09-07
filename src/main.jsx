@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Root from './routes/root'
-import Clube from './routes/clube/clube'
-import Index from './App'
+import Root from './root'
+import Clube from './views/Clube/clube'
+import Index from './views/Welcome/App'
 
 
 const clubeData = { admin: true, url: null, nome: 'iae', subtitulo: 'haha', descricao: 'palmeiras não tem mundiaaAAAlll' }

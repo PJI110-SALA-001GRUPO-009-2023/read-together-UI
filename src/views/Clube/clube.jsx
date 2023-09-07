@@ -1,4 +1,4 @@
-import Panel from "../shared/panel"
+import Panel from "../../components/Panel/panel"
 
 function Clube({ data }) {
     console.log(data)

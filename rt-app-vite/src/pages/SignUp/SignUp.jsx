@@ -14,7 +14,7 @@ function SignUp() {
     async function handleSubmit(e){
       e.preventDefault();
 
-      console.log(name, lastname, nascdata, email,password)
+      
     }
 
 

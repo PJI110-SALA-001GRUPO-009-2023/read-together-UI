@@ -12,10 +12,11 @@ function SignIn() {
     async function handleSignIn(e){
       e.preventDefault();
   
-      if(email !== '' && password !== ''){
-        await signIn(email, password);
-      } else {
+      if(email === '' && password === ''){
         alert ("Realize seu cadastro");
+        return(null);
+
+        
       }
   
     }

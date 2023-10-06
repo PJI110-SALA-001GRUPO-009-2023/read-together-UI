@@ -2,8 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Root from './root'
+
+import Start from './views/Start/Start.jsx'
+import SignIn from './views/SignIn/SignIn.jsx';
+import SignUp from './views/SignUp/SignUp.jsx';
+
+import ErrorPage from './views/ErrorPage';
+
 import Clube from './views/Clube/clube'
-import Index from './views/Welcome/App'
+
 
 
 const clubeData = { admin: true, url: null, nome: 'iae', subtitulo: 'haha', descricao: 'palmeiras não tem mundiaaAAAlll' }
@@ -12,9 +19,29 @@ const routes = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
-        index: <Index />,
+     
+
+        errorElement: <ErrorPage/>,
+
         children: [
+
             {
+                path: "/",
+                element: <Start/>
+            },
+
+            {
+                path: "/login",
+                element: <SignIn/>
+            },
+
+            {
+                path: "/cadastro",
+                element: <SignUp/>
+            },
+
+            {
+
                 path: '/clube/:idClube',
                 element: <Clube data={clubeData} />,
             }
